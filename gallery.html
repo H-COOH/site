@@ -34,7 +34,7 @@
 <div class="container-fluid p-5">
 	<h3 class="mb-4">画廊</h3>
 	<p><b>收集一些我觉得有意思的片段</b></p>
-	<div class="my-4 w-75">
+	<div class="my-4 w-75" id="main">
 		<div class="alert alert-info p-0">
 			<blockquote class="quotation">
 				<div class="comma">“</div>
@@ -72,7 +72,7 @@
 						<a href="https://ncase.me/trust/">The Evolution of Trust</a>
 					</p></div>
 			</blockquote>
-			<img src="https://ncase.me/trust/assets/conclusion/truce.jpg" class="rounded mx-auto d-block" style="width:28vw" alt="Trust">
+			<img src="https://ncase.me/trust/assets/conclusion/truce.jpg" class="rounded mx-auto d-block" alt="Trust">
 			<hr class="m-2">
 			<p class="fst-italic px-4">Trust is the foundation of any relationship.</p>
 		</div>
@@ -80,6 +80,18 @@
 </div>
 </body>
 <style>
+	img
+	{width:40%;}
+
+	@media screen and (max-width:600px)
+	{
+		#main
+		{width:100% !important;}
+
+		img
+		{width:60% !important;}
+	}
+
 	.quotation
 	{
 		position:relative;
