@@ -5,6 +5,7 @@
 	<meta name="viewport" content="initial-scale=1,width=device-width">
 	<meta content="Mzxr 的介绍" name="description">
 	<meta content="谜之仙人,何一霆,Yiting He,友情链接" name="keywords">
+	<link rel="stylesheet" href="spire.css">
 	<title>关于</title>
 </head>
 <body>
@@ -15,24 +16,50 @@
 </p>
 <h1 style="text-align:center;margin-top:3vh">Mzxr 的个人主页</h1>
 <div style="margin:6vh 3vw">
-	<p>我的思想大致可以分为四层：最外层是朴素的礼貌；第二层是探索、迷途、失败、成功调和出的酸甜苦辣；第三层是解构主义的虚无和存在主义的焦虑；而最深处是对世界的热爱和对生命的敬畏。</p>
-	<p><a href="https://know.mzxr.online/weeks/2025/birth/" target="_blank">这篇文章</a> 是我最近为自己写的生日寄语，我希望自己能成为这样的人。
-	</p>
-	<p>我的人生仍处于探索期，we live and learn。</p>
-	<hr>
-	<br>
-	<p>我喜欢与人交流一切 deep interesting 的话题，欢迎给我发邮件（请记得将我邮箱加入白名单）</p>
-	<hr>
-	<h3>友情链接</h3>
-	<ul style="line-height:1.8">
-		<li>
-			<a href="http://home.ustc.edu.cn/~erchius_jzy/" target="_blank">Erchius</a>
-		</li>
-		<li>
-			<a href="http://staff.ustc.edu.cn/~ynyang/" target="_blank">Dr. Yaning Yang</a>
-		</li>
-	</ul>
-	<hr>
+	<div id="prob" class="box">
+		<p>嚯嚯嚯！你好，你好啊！这是谁呀？哎呀呀，你好冒险者，我就问一个简单的问题。</p>
+		<p>最幸福的人生当然就是<span class="glitch-text" style="color:tomato"><span>什</span><span>么</span><span>东</span><span>西</span><span>都</span><span>能</span><span>买</span><span>得</span><span>起</span></span>的土豪生活了！</p>
+		<p style="color:lime"><span class="floating_letter">你</span><span class="floating_letter">同</span><span class="floating_letter">意</span><span class="floating_letter">吗</span><span class="floating_letter">？</span></p>
+		<p><button style="width:80px;margin-top:10px" onclick="go(true)">同意</button><br><button style="width:80px;margin-top:10px" onclick="go(false)">反对</button></p>
+	</div>
+	<div id="yes" class="box" style="display:none">
+		<p><span class="floating_letter">对</span><span class="floating_letter">～</span><span class="floating_letter">！</span></p>
+		<p><span class="floating_letter">这</span><span class="floating_letter">会</span><span class="floating_letter">很</span><span class="floating_letter">值</span><span class="floating_letter">～</span><span class="floating_letter">得</span><span class="floating_letter">的</span><span class="floating_letter">。</span></p>
+		<p><span class="floating_letter">嘶</span><span class="floating_letter">…</span><span class="floating_letter">…</span><span class="floating_letter">嘶</span><span class="floating_letter">～</span><span class="floating_letter">嘶</span><span class="floating_letter">…</span><span class="floating_letter">…</span></p>
+		<img src="https://static.wikia.nocookie.net/slay-the-spire/images/7/78/Event_-_The_Ssssserpent.jpg" alt="Liars game" style="width:200px;margin-bottom:10px">
+	</div>
+	<div id="no" style="display:none">
+		<div class="box">
+			<p>谢谢你的回答！很高兴能向你介绍我自己</p>
+		</div>
+		<div style="margin-top:30px">
+			<p>我的思想大致可以分为四层：最外层是朴素的礼貌；第二层是探索、迷途、失败、成功调和出的酸甜苦辣；第三层是解构主义的虚无和存在主义的焦虑；而最深处是对世界的热爱和对生命的敬畏。</p>
+			<p><a href="https://know.mzxr.online/weeks/2025/birth/" target="_blank">这篇文章</a> 是我最近为自己写的生日寄语，我希望自己能成为这样的人。</p>
+			<p>我的人生仍处于探索期，we live and learn。</p>
+			<hr>
+			<br>
+			<p>我喜欢与人交流一切 deep interesting 的话题，欢迎给我发邮件（请记得将我邮箱加入白名单）</p>
+			<hr>
+			<h3>News</h3>
+			<hr>
+		</div>
+	</div>
 </div>
 </body>
+<style>
+	.box
+	{
+		padding:0 1.2em;
+		margin-bottom:1.6em;
+		border:1px solid #444444;
+		border-radius:16px;
+	}
+</style>
+<script>
+	function go(ans)
+	{
+		document.getElementById("prob").style.display="none";
+		document.getElementById(ans?"yes":"no").style.display="block";
+	}
+</script>
 </html>
